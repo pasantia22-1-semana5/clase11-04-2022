@@ -1,0 +1,5 @@
+openapi: 3.0.0
+info:
+  title: School-API
+  description: documentación de api rest con swagger
+  version: 1.0

@@ -1,0 +1,17 @@
+###
+@root = http://127.0.0.1:5000/
+
+###
+GET {{root}}api/v1/users/
+
+### create new user
+
+POST {{root}}api/v1/users/signup
+Content-Type: application/json
+
+{
+    "username": "usllslsis",
+    "email": "msisi@gmail.com",
+    "password": "llsisislslsls",
+    "role": "admin"
+}

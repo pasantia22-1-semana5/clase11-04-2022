@@ -1,0 +1,31 @@
+[
+    {
+        "_id": 1,
+        "_username": "test1",
+        "_email": "test1@gmail.com",
+        "_password": "$2b$10$Eal2v4GDJ4E40p8EQlBfH.0qEH5iN6D5pUiZh5hkXi0MUcoLJNVAq",
+        "_role": "admin",
+        "_createdAt": "Sun Apr 10 2022"
+    },
+    {
+        "_username": "test2",
+        "_email": "test2@gmail.com",
+        "_password": "$2b$10$9BHy947PwjhMF2NlXEZ9LOswISbADqE18OMQE8VAiXf7MyK2yg0UC",
+        "_role": "admin",
+        "_id": 2
+    },
+    {
+        "_username": "89766",
+        "_email": "gmail.com",
+        "_password": "$2b$10$sammePLHijujsXt1gdKVTuq3sYEmusMdWjuaM8RTkv1c5E7E5kRVy",
+        "_role": "a",
+        "_id": 3
+    },
+    {
+        "_username": "",
+        "_email": "gmail.com",
+        "_password": "$2b$10$9Njm.PDRBDa9YMJujQJxDODzNs.xFgDlTXABXg6YzHvEhA03YpKcG",
+        "_role": "a",
+        "_id": 4
+    }
+]

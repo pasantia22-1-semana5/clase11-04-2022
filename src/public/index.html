@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>api-school</title>
+        <style>
+            .main{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .bb::before, .bb::after, .bb {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+          
+            .bb {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                background: url("https://i.pinimg.com/originals/d5/ee/0a/d5ee0a7652c6ee3cd210dc4055889a2b.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+                color: #69ca62;
+                box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+            }
+            .bb::before, .bb::after {
+                content: "";
+                z-index: -1;
+                margin: -5%;
+                box-shadow: inset 0 0 0 2px;
+                animation: clipMe 8s linear infinite;
+            }
+            .bb::before {
+                animation-delay: -4s;
+            }
+           
+          
+            @keyframes clipMe {
+                0%, 100% {
+                    clip: rect(0px, 220px, 2px, 0px);
+                }
+                25% {
+                    clip: rect(0px, 2px, 220px, 0px);
+                }
+                50% {
+                    clip: rect(218px, 220px, 220px, 0px);
+                }
+                75% {
+                    clip: rect(0px, 220px, 220px, 218px);
+                }
+            }
+          html,
+          body {
+            height: 100%;
+          }
+          
+          body {
+            position: relative;
+            background-color: #0f222b;
+          }
+          
+          *,
+          *::before,
+          *::after {
+            box-sizing: border-box;
+          }
+          .content{
+              position: relative;
+              top: 200px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              color: #fff;
+          }
+          p{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #fff;
+          }
+          a{
+                color: #fff;
+                text-decoration: none;
+          }
+          .btn-doc{
+                background-color: #69ca62;
+                color: #fff;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 1rem;
+          }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <div class="bb"></div>
+            <div class="content">
+                <h2>Bienvenido a la API de la escuela</h2>
+                <p>
+                    Rerum maiores nemo. Ullam ratione velit repudiandae.
+                </p>
+                <div class="btn-doc">
+                    <a href="http://localhost:4000/api/v1/docs" target="_blank" rel="noopener noreferrer">documentación de la api-rest</a>
+                </div>
+            </div>
+         </main>
+    </body>
+</html>
